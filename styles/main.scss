@@ -4,7 +4,7 @@
 
 @import 'font';
 @import 'base';
-
+@import 'breakpoint';
 @import 'mixins';
 @import 'card';
 
@@ -13,17 +13,64 @@
 
 @import 'button';
 @import 'underline';
-@import 'containers';
+
 @import 'breakpoint';
-@import './pages/index';
+
 
 @import 'utilities';
 
-
+@import 'index';
 
 .number-icon{
   @include number();
 }
+@include xs{
+  .header{
+    padding:$zero-padding;
+    &__logo-block{
+      box-shadow: $box-shadow-sm;
+      background-color:$header-logo-bg-color;
+      
+    }
+   
+    &__location{
+      box-shadow:$box-shadow-sm;
+      background-color:$header-location-bg-color;
+    }
+
+  }
+
+  .sub-header{
+    background-color:$header-logo-bg-color;
+    display:flex;
+    flex-direction: column;
+  }
+  
+}
+
+
+
+@include md{
+  .header{
+    &__content{
+      justify-content: space-between !important;
+    }
+    &__logo-block{
+      justify-content: start;
+    }
+    &__location{
+      justify-content: end;
+    }
+
+
+  }
+  
+  
+
+}
+
+
+
 
 
 

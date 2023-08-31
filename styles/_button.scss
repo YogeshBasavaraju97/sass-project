@@ -1,23 +1,43 @@
-@mixin btn{
-  padding:$padding-lg;
+@mixin btn($font, $padding){
+  padding:$padding;
   border-radius: $base-border-radius*2;
   border: none;
   box-shadow:$base-box-shadow;
   color:$white-color;
-  font-size: $font-size-lg;
   display: flex;
   align-items: center;
   justify-content: center;
+  
+}
+@include xs{
+  .btn-primary{
+    @include btn($base-padding,$base-margin);
+    @include dimension(210px, 50px);
+    font-size: 15px;
+    background: linear-gradient(170deg, $secondary-color,$primary-color);
+    }
+}
+@include md{
+  .btn-primary{
+    @include btn($base-padding,$base-margin);
+    @include dimension(250px, 55px);
+    font-size: 20px;
+    background: linear-gradient(170deg, $secondary-color,$primary-color);
+    }
+}
 
-}
-.btn-primary{
-@include btn;
-background: linear-gradient(170deg, $secondary-color,$primary-color);
+@include lg{
+  .btn-primary{
+    @include btn($base-padding,$base-margin);
+    @include dimension(250px, 55px);
+    font-size: 20px;
+    background: linear-gradient(170deg, $secondary-color,$primary-color);
+    }
 }
 
-.btn-secondary{
-  @include btn;
-  @include dimension(190px,50px);
-  background: linear-gradient(170deg, $secondary-color,$primary-color);
-}
+// .btn-secondary{
+//   @include btn;
+//   @include dimension(190px,50px);
+//   background: linear-gradient(170deg, $secondary-color,$primary-color);
+// }
 
