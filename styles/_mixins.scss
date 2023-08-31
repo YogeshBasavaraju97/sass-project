@@ -88,22 +88,4 @@
 
 
 
-@mixin breakpoint($size){
 
-  @if $size == small{
-    @media(max-width:786px){
-      @content;
-    }
-  }
-  @else if $size == medium {
-    @media (min-width:786px) and (max-width: 992px){
-      @content;
-    }
-  }
-  @else if $size == large{
-    @media (min-width:992px){
-      @content;
-    }
-
-  }
-}
