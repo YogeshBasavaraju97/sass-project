@@ -13,202 +13,60 @@
 
 @import 'button';
 @import 'underline';
-
 @import 'breakpoint';
-
-
 @import 'utilities';
-
 @import 'index';
+@import 'menu';
 
-.number-icon{
-  @include number();
-}
-@include xs{
+
+
+
+@include lg{
   .header{
-    padding:$zero-padding;
-    &__logo-block{
-      box-shadow: $box-shadow-sm;
-      background-color:$header-logo-bg-color;
-      
+    &__display{
+      display: none;
     }
-   
-    &__location{
-      box-shadow:$box-shadow-sm;
-      background-color:$header-location-bg-color;
+    &__image{
+      @include dimension(100%, 350px)
     }
 
-  }
-
-  .sub-header{
-    background-color:$header-logo-bg-color;
-    display:flex;
-    flex-direction: column;
   }
   
+
 }
-
-
 
 @include md{
   .header{
-    &__content{
-      justify-content: space-between !important;
+  
+    &__display{
+      display:block;
     }
-    &__logo-block{
-      justify-content: start;
+    &__image{
+      @include dimension(100%, 300px)
     }
-    &__location{
-      justify-content: end;
-    }
-
-
   }
-  
-  
+}
+@include sm{
+  .header{
+    
+    &__display{
+      display:block;
+    }
+    &__image{
+      @include dimension(100%, 400px)
+    }
+  }
+  .menu{
+    z-index: 1;
+    margin-top: -92px;
+    position: relative;
+    background-color:$header-logo-bg-color;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    
+  }
 
 }
-
-
-
-
-
-
-// .card{
-//  &__image{
-//   @include card-image(100%, 350px);
-//  }
-// }
-// .fa-size{
-//   font-size: x-large;
-// }
-// .container{
-//   @extend %padding;
-//   &__title{
-//     @include flex(space-between);
-//     font-family: $font-Shrikhand;
-   
-//   }
-//   &__list-title{
-//     padding: 0px 0px 0px 30px;
-//     font-weight: 100;
-//     color:  #7F7E81;
-//   }
-//   &__heart{
-//     @include flex(start);
-//     @include dimension(100px,auto);
-   
-//   }
-  
-//   &__content{
-//     @include flex(space-between);
-//   }
-
-//   &__item{
-//     @include list-btn;
-//     @include dimension(23rem, auto);
-//     @include margin(20px);
-//     @include flex(space-between);
-//   }
-//   &__item-title{
-//     font-weight: $font-large;
-//   }
-//   &__item-subtitle{
-//     font:$font-medium;
-//     color:$description-color;
-//   }
-//   &__button{
-//     @include flex(center);
-//     @include dimension(100%, 70px);
-//   }
-
-// } 
-
-
-
-// // ************tablet version *****************
-// @media screen and (min-width: 786px) and (max-width: 992px){
-
-// .container{
-//   &__content{
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: center;
-//   }
-//   &__list{
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: flex-start;
-//     width:98%;
-//     margin:10px;
-//   }
-//   &__item-title{
-//     font-weight: $font-medium;
-   
-//   }
-//   &__item-subtitle{ 
-//     color:$description-color;
-
-//   }
-//   &__item{
-//     @include list-btn(8px);
-//     @include dimension(98%, 5rem);
-//     margin: 0px 10px 20px 0px;
-//     @include flex(space-between);
-//   }
-// }
-
-  
-// }
-
-// @media screen and (max-width:786px){
-  
-  
-  
-//   .header{
     
-//     .display{
-//       display: inline;
-//     }
-//     &__logoblock{
-//       width:100%;
-//       @include flex();
-      
-//     }
 
-//   }
-  
 
-//   .container{
-//     position: absolute;
-//     z-index: 1;
-//     background-color: #EDECEF;
-//     margin: -50px 0px 0px 0px;
-//     border-top-left-radius: 50px;
-//     border-top-right-radius: 50px;
-    
-//     &__content{
-//       display: flex;
-//       flex-wrap: wrap;
-//       justify-content: center;
-//     }
-//     &__list{
-//       display: flex;
-//       flex-direction: column;
-//       justify-content: flex-start;
-//       width:100%;
-//       margin:10px;
-//     }
-//     &__list-title{
-//       padding: 0px;
-//     }
-//     &__item{
-//       @include list-btn(8px);
-//       @include dimension(95%, 5rem);
-//       margin: 0px 10px 20px 0px;
-//       @include flex(space-between);
-//     }
-  
-//   }
-
-// }

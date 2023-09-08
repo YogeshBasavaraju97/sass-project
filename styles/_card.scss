@@ -1,10 +1,10 @@
 .card{
   display:block;
- 
-  border: $base-border-thickness solid #ddd;
+  border-radius: $base-border-radius;
   box-shadow: $base-box-shadow;
-  
-  
+  overflow: hidden;
+
+
   .card-title{
     font-size:$font-size-lg;
     padding-bottom: $base-padding;
@@ -15,4 +15,7 @@
     font-size: $base-font-size;
     color: $description-color;
   }
+}
+.number-icon{
+  @include number();
 }

@@ -153,7 +153,8 @@ $utilities : (
   "font-size": (
     "prefix": "font",
     "values":(
-      "sm": $font-size-sm,
+      "xs": $base-font-size-xs,
+      "sm": $base-font-size,
       "md": $font-size-md,
       "lg":$font-size-lg,
       "xl":$font-size-xl,

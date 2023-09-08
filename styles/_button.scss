@@ -9,7 +9,16 @@
   justify-content: center;
   
 }
-@include xs{
+@mixin btn-icon{
+
+}
+.btn-secondary{
+  @include btn($base-padding,$base-margin);
+  @include dimension(150px,35px);
+  background: linear-gradient(170deg, $secondary-color,$primary-color);
+
+}
+@include sm{
   .btn-primary{
     @include btn($base-padding,$base-margin);
     @include dimension(210px, 50px);

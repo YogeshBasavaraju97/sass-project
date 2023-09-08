@@ -24,20 +24,18 @@
   }
 }
 
-@mixin options-item($width,$height){
+@mixin list-item($width,$height){
   @include justify-content(start);
   gap:$base-gap;
-  padding:$base-padding;
+  padding:$padding-m;
   box-shadow:$base-box-shadow;
-  border-radius: $base-border-radius;
+  border-radius: $border-radius-m;
   @include dimension($width,$height );
 }
-.opt-item{
-  @include options-item(250px,35px);
-}
 
 
-@mixin number($margin:-25px){
+
+@mixin number($margin:-28px){
   @include justify-content(center);
   background-color: $primary-color;
   color:$white-color;
@@ -45,6 +43,14 @@
   margin: 0px 0px 0px $margin;
   width: 20px;
   height:20px; 
+}
+@mixin menu-item {
+	background: white;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	display: flex;
 }
 
 

@@ -10,6 +10,7 @@ $anchor-color:black;
 $pale-grey:#EDECEF;
 $header-logo-bg-color: #F3F3F3;
 $header-location-bg-color:#dcdbdb;
+$black-shade:#4A4949;
 
 
 
@@ -17,12 +18,15 @@ $colors : (
   "primary":$primary-color,
   "secondary": $secondary-color,
   "tertiary-color": $tertiary-color,
+  "primary-bg-color":#EEE4F9,
   "border": #ddd,
   "white": white,
   "pale-grey": #EDECEF,
   "light-grey": $description-color,
   "black": black,
   "bg-colour": #F3F3F3,
+  "black-shade":#4A4949,
+  "subtitle-color":grey,
 );
 
 $justify-content: (
@@ -34,11 +38,11 @@ $justify-content: (
 
 
 //spacing
-$base-padding : 10px;
+$base-padding : 5px;
 $base-margin :5px;
 
 $zero-padding:0px;
-$padding-m: 15px;
+$padding-m: 20px;
 $padding-lg: 20px;
 $padding-xlg:25px;
 $padding-xxl:30px;
@@ -53,12 +57,15 @@ $margin-xxl:20px;
 $base-border-thickness: 1px;
 $base-border-radius:20px;
 
+$border-radius-m:25px;
+
 //box-shadows
-$base-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+$base-box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
 $box-shadowing-sx: 2px 3px 4px 0px rgba(0,0,0,0.3);
 $box-shadow-sm: 3px 4px 5px rgba(0,0,0,0.2);
 
 //base font size
+$base-font-size-xs: .75rem;
 $base-font-size: 1rem;
 $font-size-sm: $base-font-size * 0.75;
 $font-size-md: $base-font-size * 1.25;

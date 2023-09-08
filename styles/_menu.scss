@@ -1,0 +1,72 @@
+* {
+	box-sizing: border;
+}
+
+
+
+.menu-item {
+	background: white;
+	border-radius: 16px;
+	margin-bottom: 15px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	display: flex;
+
+	.menu-item__price {
+		display: flex;
+		align-items: center;
+		padding: 20px;
+	}
+
+	&:hover { 
+		.menu-item__checkmark {
+			width: 75px;
+		}
+		.menu-item__checkmark-icon {
+			-webkit-transform: rotate(0deg);
+			transform: rotate(0deg);
+		}
+	}
+
+	.menu-item__body {
+		width: 100%;
+		padding: 15px; 
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+
+		.menu-item__content, .menu-item__heading {
+			margin: 0;
+			font-size: 15px;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			white-space: nowrap;
+		} 
+
+		.menu-item__heading{
+			font-size: 17px;
+		}
+	}
+
+	.menu-item__checkmark {
+		width: 0px;
+		background: 
+		#91E6DF;
+		transition: width 1s;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+
+	.menu-item__checkmark-icon {
+		transform: rotate(360deg);
+		transition: transform 1s;
+		color: white;
+	}
+}
