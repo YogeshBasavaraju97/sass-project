@@ -10,8 +10,27 @@
   
 }
 @mixin btn-icon{
+  width: 80px;
+  height: 30px;
+  background-color:$tertiary-color;
+  color:$green-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
 
 }
+.btn-icon{
+  @include btn-icon();
+}
+.overlay{
+  position: absolute; 
+  display: flex;
+  top:5%;
+  left:80%;
+}
+
+
 .btn-secondary{
   @include btn($base-padding,$base-margin);
   @include dimension(150px,35px);
