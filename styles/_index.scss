@@ -38,6 +38,7 @@
     background-color:$header-logo-bg-color;
     display:flex;
     flex-direction: column;
+    position: relative;
   }
   .navbar__item{
     @include list-item(100%,30px);
@@ -71,6 +72,7 @@
 
 
   }
+  
   .navbar__item{
     @include list-item(200px,30px);
   }
