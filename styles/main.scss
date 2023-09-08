@@ -31,6 +31,15 @@
     }
 
   }
+  .menu{
+    z-index: 1;
+    margin-top: -40px;
+    position: relative;
+    background-color:$header-logo-bg-color;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    
+  }
   
 
 }
@@ -44,6 +53,15 @@
     &__image{
       @include dimension(100%, 300px)
     }
+  }
+  .menu{
+    z-index: 1;
+    margin-top: -40px;
+    position: relative;
+    background-color:$header-logo-bg-color;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    
   }
 }
 @include sm{
