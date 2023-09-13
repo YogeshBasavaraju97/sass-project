@@ -36,7 +36,7 @@ $justify-content: (
    "end": end,
 );
 
-
+$base-gradient : linear-gradient(170deg, $secondary-color,$primary-color);
 //spacing
 $base-padding : 5px;
 $base-margin :5px;

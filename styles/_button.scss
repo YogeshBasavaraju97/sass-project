@@ -7,8 +7,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
+  background:$base-gradient;
+  &:hover{
+    opacity: .94;
+    transition: opacity 250ms;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition:  box-shadow 250ms;
+    
+  }
+
 }
+
+
 @mixin btn-icon{
   width: 80px;
   height: 30px;
@@ -35,7 +45,7 @@
   @include btn($base-padding,$base-margin);
   @include dimension(150px,35px);
   background: linear-gradient(170deg, $secondary-color,$primary-color);
-
+  
 }
 @include sm{
   .btn-primary{
@@ -63,9 +73,19 @@
     }
 }
 
-// .btn-secondary{
-//   @include btn;
-//   @include dimension(190px,50px);
-//   background: linear-gradient(170deg, $secondary-color,$primary-color);
-// }
+.fa.fa-hover-hidden {
+  color: $black-shade;
+}
+.fa.fa-hover-show {
+  color: $primary-color;
+}
+
+* > .fa.fa-hover-show,
+*:hover > .fa.fa-hover-hidden {
+    display: none;
+}
+
+*:hover > .fa.fa-hover-show {
+    display: inline-block;
+}
 

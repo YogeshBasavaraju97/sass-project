@@ -1,11 +1,4 @@
 
-@mixin make-container($padding-x: $container-padding-x) {
-  padding-right: $padding-x;
-  padding-left: $padding-x;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 @mixin dimension($width:100px, $height:100px){
   width:$width;
   height:$height;
@@ -90,7 +83,13 @@
   margin: 0px 0px $margin 0px;
 }
 
-
+@mixin loading-icon{
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+}
 
 
 
