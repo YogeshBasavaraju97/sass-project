@@ -35,7 +35,6 @@
   }
     
   .navbar{
-    background-color:$header-logo-bg-color;
     display:flex;
     flex-direction: column;
     position: relative;
@@ -46,7 +45,14 @@
   .card-image{
     @include dimension(100%, 300px)
   }
+  .text-wrap{
+    inline-size: 400px;
+    overflow-wrap: break-word;
   
+  }
+  
+  
+
 }
 
 
