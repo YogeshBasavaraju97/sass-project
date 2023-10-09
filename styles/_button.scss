@@ -75,18 +75,34 @@
 
 .fa.fa-hover-hidden {
   color: $black-shade;
+  
 }
 .fa.fa-hover-show {
-  color: $primary-color;
-  
+  display: inline;
+  background: -webkit-linear-gradient(60deg, $secondary-color, $primary-color) 0% 0% / 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
 
 * > .fa.fa-hover-show,
 *:hover > .fa.fa-hover-hidden {
     display: none;
+    animation: heart 2s;
 }
 
 *:hover > .fa.fa-hover-show {
     display: inline-block;
+   
+}
+@keyframes heart {
+  0%{
+    font-size: large;
+  }
+  
+  100%{
+    font-size: xx-large;
+  }
+  
 }
 

@@ -971,18 +971,30 @@ gap-4 {
 }
 
 .fa.fa-hover-show {
-  color: #9356DC;
+  display: inline;
+  background: -webkit-linear-gradient(60deg, #FF79DA, #9356DC) 0% 0%/300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 * > .fa.fa-hover-show,
 *:hover > .fa.fa-hover-hidden {
   display: none;
+  animation: heart 2s;
 }
 
 *:hover > .fa.fa-hover-show {
   display: inline-block;
 }
 
+@keyframes heart {
+  0% {
+    font-size: large;
+  }
+  100% {
+    font-size: xx-large;
+  }
+}
 .underline {
   text-decoration: underline;
   text-decoration-color: #99E2D0;
@@ -1594,7 +1606,6 @@ gap-4 {
   }
   100% {
     transform: translateY(0);
-    transition: 1000ms;
   }
 }
 
